@@ -20,7 +20,7 @@ export class AuthService {
     return { message: 'User created successfully' };
   }
 
-  async authUser(email, password) {
+  async authUser(email: string, password: string) {
     const user = await this.usersService.findOne(email);
     if (!user) {
       throw new UnauthorizedException('Invalid credentials');

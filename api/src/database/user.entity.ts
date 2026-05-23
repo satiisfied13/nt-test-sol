@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Message } from './message.entity';
 
 @Entity()
 export class User {
@@ -9,4 +10,7 @@ export class User {
   @Column({ unique: true }) email!: string;
 
   @Column() password!: string;
+
+  @OneToMany(() => Message, (message) => message.sender)
+  messages!: Message[];
 }

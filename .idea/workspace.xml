@@ -4,14 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="eslint fixes">
+    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="add front">
+      <change afterPath="$PROJECT_DIR$/api/src/chat/chat.gateway.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/chat/chat.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/chat/chat.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/chat/dtos/message.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/database/message.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/database/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/user.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/users/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/users/dtos/change-user-name.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/dtos/change-user-name.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/users/dtos/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/dtos/users.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.service.ts" afterDir="false" />
     </list>
@@ -30,12 +57,12 @@
     &quot;assignee&quot;: &quot;satiisfied13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/satiisfied13/nt-test-sol.git",
-    "accountId": "4ab0bcc9-825a-4dd9-b453-717847fecc2e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/satiisfied13/nt-test-sol.git&quot;,
+    &quot;accountId&quot;: &quot;4ab0bcc9-825a-4dd9-b453-717847fecc2e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -60,7 +87,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
-    "ts.external.directory.path": "C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\andr_\\Desktop\\nest\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +108,8 @@
       <updated>1779529171277</updated>
       <workItem from="1779529172367" duration="1075000" />
       <workItem from="1779530264530" duration="458000" />
-      <workItem from="1779530728205" duration="732000" />
+      <workItem from="1779530728205" duration="1531000" />
+      <workItem from="1779540336601" duration="2742000" />
     </task>
     <task id="LOCAL-00001" summary="sdf">
       <option name="closed" value="true" />
@@ -99,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779530961376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="eslint fixes">
+      <option name="closed" value="true" />
+      <created>1779531490631</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779531490631</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +157,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="add auth" />
     <MESSAGE value="eslint fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="eslint fixes" />
+    <MESSAGE value="add front" />
+    <option name="LAST_COMMIT_MESSAGE" value="add front" />
   </component>
 </project>

@@ -12,7 +12,7 @@ export class ChangeUserNameDto {
   email!: string;
 
   @IsString()
-  @MinLength(6)
+  @MinLength(2)
   @MaxLength(32)
   @IsNotEmpty()
   name!: string;

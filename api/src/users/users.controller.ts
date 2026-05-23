@@ -19,12 +19,7 @@ export class UsersController {
     return await this.authService.authUser(user.email, user.password);
   }
 
-  @Get() async getUsers() {
-    const res = await this.usersService.findAll();
-    return { message: res };
+  @Put() async changeName(@Body() user: ChangeUserNameDto) {
+    return await this.usersService.updateOne(user.email, user.name);
   }
-
-  // @Put() changeName(@Body() user: ChangeUserNameDto) {
-  //
-  // }
 }
