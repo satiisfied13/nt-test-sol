@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="sdf">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="eslint fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users/dtos/change-user-name.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/dtos/change-user-name.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users/dtos/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/dtos/users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -25,12 +30,12 @@
     &quot;assignee&quot;: &quot;satiisfied13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/satiisfied13/t-test-sol.git&quot;,
-    &quot;accountId&quot;: &quot;4ab0bcc9-825a-4dd9-b453-717847fecc2e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/satiisfied13/nt-test-sol.git",
+    "accountId": "4ab0bcc9-825a-4dd9-b453-717847fecc2e"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -40,22 +45,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/andr_/Desktop/nest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/andr_/Desktop/nest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "ts.external.directory.path": "C:\\Users\\andr_\\Desktop\\nest\\api\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,6 +81,7 @@
       <updated>1779529171277</updated>
       <workItem from="1779529172367" duration="1075000" />
       <workItem from="1779530264530" duration="458000" />
+      <workItem from="1779530728205" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="sdf">
       <option name="closed" value="true" />
@@ -82,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779529979658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add auth">
+      <option name="closed" value="true" />
+      <created>1779530961376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779530961376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +118,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdf" />
+    <MESSAGE value="init" />
+    <MESSAGE value="add auth" />
+    <MESSAGE value="eslint fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="eslint fixes" />
   </component>
 </project>

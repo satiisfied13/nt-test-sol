@@ -16,9 +16,9 @@ import { User } from './database/user.entity';
       database: 'mydatabase',
       entities: [User],
       synchronize: true,
-    })
+    }),
   ],
   controllers: [AppController],
-  providers: []
+  providers: [],
 })
 export class AppModule {}
