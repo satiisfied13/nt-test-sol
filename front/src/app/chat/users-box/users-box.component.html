@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <mat-card>
+    @for (user of users; track user.id) {
+      <div class="user" [class.selected]="selectedUser()?.id === user.id" (click)="selectUser(user)">
+        <h3>{{ user.name || 'Guest' }}</h3>
+        <span>{{ user.email }}</span>
+      </div>
+    }
+  </mat-card>
+</div>

@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+
+  mat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 500px;
+    height: 700px;
+    padding: 17px;
+    overflow-y: auto;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 92, 187, 0.02);
+    }
+
+    &.selected {
+      background-color: rgba(0, 92, 187, 0.16);
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+}

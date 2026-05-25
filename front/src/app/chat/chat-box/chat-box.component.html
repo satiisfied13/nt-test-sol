@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <mat-card>
+    <div class="title">
+      <h2>
+        Welcome,
+        @if (isNameChange) {
+          <mat-form-field class="rm-sub-wrap" appearance="outline">
+            <input id="nameInp" matInput [formControl]="name">
+          </mat-form-field>
+        } @else {
+          <span>{{ user()?.name || 'Guest' }}</span>
+        }
+        !
+      </h2>
+      <div class="btns">
+        <button
+          mat-button
+          (click)="isNameChange ? onNameChangeSubmit() : onNameChange()"
+        >
+          {{ isNameChange ? 'Submit' : 'Rename' }}
+        </button>
+        <button [disabled]="isNameChange" mat-button (click)="onLogout()">Logout</button>
+      </div>
+    </div>
+    @if (selectedUser()) {
+      <div class="title chat-with bg-white">
+        <h4>
+          {{selectedUser()?.email}}
+        </h4>
+      </div>
+      <div class="content-block">
+        <div class="block p-r">hi</div>
+        <div class="block p-l">hello</div>
+        <div class="block p-l">some</div>
+        <div class="block p-r">any some any some any</div>
+      </div>
+      <mat-form-field class="rm-sub-wrap" appearance="outline">
+        <mat-label>Text</mat-label>
+        <input type="text" matInput>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="$event.stopPropagation()"
+        ><mat-icon>send</mat-icon></button>
+      </mat-form-field>
+    } @else {
+      <div class="placeholder">
+        <h3>Select someone! <mat-icon>arrow_forward</mat-icon></h3>
+      </div>
+    }
+  </mat-card>
+</div>

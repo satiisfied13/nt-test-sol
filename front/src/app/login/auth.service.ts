@@ -2,24 +2,11 @@ import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs';
 import { Router } from '@angular/router';
-import { UserService } from '../user.service';
+import { UserData, UserService } from '../user.service';
 
 export interface UserInput {
   email: string;
   password: string;
-}
-
-export interface UserData {
-  id: number;
-  email: string;
-  name: string;
-}
-
-export interface UserAPI {
-  id: number;
-  email: string;
-  name: string;
-  token: string;
 }
 
 @Injectable({
