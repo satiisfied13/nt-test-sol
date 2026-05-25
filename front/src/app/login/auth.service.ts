@@ -2,7 +2,7 @@ import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs';
 import { Router } from '@angular/router';
-import { UserData, UserService } from '../user.service';
+import { UserData, UserService } from '../chat/users-box/user.service';
 
 export interface UserInput {
   email: string;

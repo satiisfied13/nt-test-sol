@@ -1,12 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component, effect, EventEmitter, inject, Output } from '@angular/core';
 import { MatCard } from '@angular/material/card';
 import { MatFormField, MatInput, MatSuffix } from '@angular/material/input';
 import { MatLabel } from '@angular/material/form-field';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatIcon } from '@angular/material/icon';
-import { UserService } from '../../user.service';
+import { UserService } from '../users-box/user.service';
 import { AuthService } from '../../login/auth.service';
+import moment from 'moment';
 
 @Component({
   selector: 'app-chat-box',
@@ -29,8 +30,19 @@ export class ChatBoxComponent {
   authService = inject(AuthService);
   user = this.userService.user;
   selectedUser = this.userService.selectedUser;
+  messages = this.userService.messages;
   name = new FormControl('', { nonNullable: true });
+  message = new FormControl('', { nonNullable: true });
   isNameChange = false;
+
+  @Output() sendMessage = new EventEmitter();
+
+  constructor() {
+    effect(() => {
+      this.selectedUser();
+      this.focusInput('msgInp');
+    });
+  }
 
   onLogout() {
     this.authService.logout();
@@ -41,12 +53,7 @@ export class ChatBoxComponent {
     if (this.user()) {
       this.name.setValue(this.user()!.name);
     }
-    setTimeout(() => {
-      const target = document.getElementById('nameInp');
-      if (target) {
-        target.focus();
-      }
-    }, 100);
+    this.focusInput('nameInp');
   }
 
   onNameChangeSubmit() {
@@ -67,4 +74,21 @@ export class ChatBoxComponent {
       return;
     }
   }
+
+  send(text: string) {
+    this.sendMessage.emit(text);
+    this.message.setValue('');
+    this.focusInput('msgInp');
+  }
+
+  focusInput(id: string) {
+    setTimeout(() => {
+      const target = document.getElementById(id);
+      if (target) {
+        target.focus();
+      }
+    }, 10)
+  }
+
+  readonly moment = moment;
 }

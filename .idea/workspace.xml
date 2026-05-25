@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="chat ui and cookie auth">
-      <change afterPath="$PROJECT_DIR$/api/src/users/models/user.model.ts" afterDir="false" />
+    <list default="true" id="fc750a78-3aad-4463-9ae5-0a61e6c77cc1" name="Changes" comment="add full chat logic and ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/users/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/chat/chat.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/chat/chat.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/chat/chat.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/chat/chat.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/chat/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/chat/chat.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/message.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/message.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat-box/chat-box.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/chat.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/chat/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/chat/chat.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/chat/users-box/users-box.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/users-box/users-box.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/app/login/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/login/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/app/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/app/chat/users-box/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +74,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andr_\Desktop\nest\front\src\app\chat\users-box" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +101,7 @@
       <workItem from="1779612584481" duration="6007000" />
       <workItem from="1779640638816" duration="7665000" />
       <workItem from="1779691516461" duration="182000" />
-      <workItem from="1779695429842" duration="7636000" />
+      <workItem from="1779695429842" duration="15503000" />
     </task>
     <task id="LOCAL-00001" summary="sdf">
       <option name="closed" value="true" />
@@ -129,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779691636507</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="append chat ui and logic">
+      <option name="closed" value="true" />
+      <created>1779703257789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779703257789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +175,8 @@
     <MESSAGE value="eslint fixes" />
     <MESSAGE value="add front" />
     <MESSAGE value="chat ui and cookie auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="chat ui and cookie auth" />
+    <MESSAGE value="append chat ui and logic" />
+    <MESSAGE value="add full chat logic and ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add full chat logic and ui" />
   </component>
 </project>

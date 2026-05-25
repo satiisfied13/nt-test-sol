@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MatCard } from '@angular/material/card';
-import { UserData, UserService } from '../../user.service';
+import { UserData, UserService } from './user.service';
 
 @Component({
   selector: 'app-users-box',
@@ -18,7 +18,6 @@ export class UsersBoxComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getAllUsers().subscribe(v => {
-      console.log(v);
       this.users = v.filter(user => user.id !== this.user()!.id);
     });
   }

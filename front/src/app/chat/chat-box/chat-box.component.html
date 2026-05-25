@@ -5,7 +5,7 @@
         Welcome,
         @if (isNameChange) {
           <mat-form-field class="rm-sub-wrap" appearance="outline">
-            <input id="nameInp" matInput [formControl]="name">
+            <input id="nameInp" matInput [formControl]="name" (keydown.enter)="onNameChangeSubmit()">
           </mat-form-field>
         } @else {
           <span>{{ user()?.name || 'Guest' }}</span>
@@ -29,18 +29,22 @@
         </h4>
       </div>
       <div class="content-block">
-        <div class="block p-r">hi</div>
-        <div class="block p-l">hello</div>
-        <div class="block p-l">some</div>
-        <div class="block p-r">any some any some any</div>
+        @for (message of messages()?.reverse(); track message.id) {
+          <div class="block {{message.sender.id === user()?.id ? 'p-r' : 'p-l'}}">
+            <span>{{message.text}}</span>
+            <span class="sm">{{moment(message.createdAt).format('HH:mm:ss')}}</span>
+          </div>
+        }
       </div>
       <mat-form-field class="rm-sub-wrap" appearance="outline">
         <mat-label>Text</mat-label>
-        <input type="text" matInput>
+        <input id="msgInp" type="text" matInput [formControl]="message" (keydown.enter)="send(message.value)">
         <button
           mat-icon-button
           matSuffix
-          (click)="$event.stopPropagation()"
+          type="submit"
+          [disabled]="!message.value"
+          (click)="$event.stopPropagation(); send(message.value)"
         ><mat-icon>send</mat-icon></button>
       </mat-form-field>
     } @else {
