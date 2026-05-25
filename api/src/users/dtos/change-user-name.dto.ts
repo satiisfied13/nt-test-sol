@@ -1,5 +1,4 @@
 import {
-  IsEmail,
   IsNotEmpty,
   IsString,
   MaxLength,
@@ -7,10 +6,6 @@ import {
 } from 'class-validator';
 
 export class ChangeUserNameDto {
-  @IsEmail()
-  @IsNotEmpty()
-  email!: string;
-
   @IsString()
   @MinLength(2)
   @MaxLength(32)

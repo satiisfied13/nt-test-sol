@@ -10,7 +10,7 @@ import { User } from './user.entity';
 @Entity()
 export class Message {
   @PrimaryGeneratedColumn()
-  Id!: number;
+  id!: number;
 
   @Column()
   text: string;

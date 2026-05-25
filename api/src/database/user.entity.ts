@@ -3,7 +3,7 @@ import { Message } from './message.entity';
 
 @Entity()
 export class User {
-  @PrimaryGeneratedColumn() Id!: number;
+  @PrimaryGeneratedColumn() id!: number;
 
   @Column({ length: 32 }) name!: string;
 

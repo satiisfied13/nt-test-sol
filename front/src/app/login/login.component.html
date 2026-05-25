@@ -1,0 +1,21 @@
+<div class="wrapper">
+  @if (loading) {
+    <h1>Loading...</h1>
+  } @else {
+    <mat-card [formGroup]="form">
+      <h2>Welcome!</h2>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput type="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" matInput type="password">
+      </mat-form-field>
+
+      <button mat-button type="submit" (click)="onSubmit()" [disabled]="!form.valid">Submit</button>
+    </mat-card>
+  }
+</div>
+

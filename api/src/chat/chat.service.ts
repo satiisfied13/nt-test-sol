@@ -11,7 +11,7 @@ export class ChatService {
   ) {}
 
   async saveMessage(text: string, userId: number) {
-    const sender = await this.userRepository.findOneBy({ Id: userId });
+    const sender = await this.userRepository.findOneBy({ id: userId });
 
     if (!sender) {
       throw new NotFoundException(`User not found!`);
